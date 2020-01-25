@@ -1,0 +1,13 @@
+.page-header {
+  width: 100%;
+  min-height: 80px;
+  background-color: $color-dark;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 76%;
+  margin: 0 auto;
+  // background-color: yellow;
+}

@@ -1,0 +1,39 @@
+.logo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo__text-eng {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-size: 25px;
+  line-height: 29px;
+  font-weight: 800;
+  margin-top: 33px;
+  margin-bottom: 1px;
+}
+
+.logo__text-eng--header {
+  color: #ffffff;
+}
+
+.logo__text-eng--footer {
+  color: #203c42;
+}
+
+.logo__text-ru {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  color: #788891;
+  margin: 0;
+}
+
+.logo__img {
+  margin-top: 26px;
+  margin-right: 16px;
+}
+
+.logo__text {
+  display: none;
+}
