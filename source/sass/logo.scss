@@ -1,6 +1,7 @@
 .logo {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .logo__text-eng {
@@ -8,7 +9,7 @@
   font-size: 25px;
   line-height: 29px;
   font-weight: 800;
-  margin-top: 33px;
+  margin-top: 6px;
   margin-bottom: 1px;
 }
 
@@ -30,10 +31,12 @@
 }
 
 .logo__img {
-  margin-top: 26px;
+  display: block;
   margin-right: 16px;
 }
 
-.logo__text {
-  display: none;
+@media (max-width: 767px) {
+  .logo__text {
+    display: none;
+  }
 }

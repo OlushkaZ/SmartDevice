@@ -1,0 +1,29 @@
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  min-width: 100px;
+  margin: 0;
+  padding: 13px 25px;
+
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+.button:focus,
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.button:active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
