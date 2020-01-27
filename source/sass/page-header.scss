@@ -1,8 +1,14 @@
 .page-header {
   width: 100%;
   background-color: $color-dark;
-  background-image: url("../img/mask-header.png");
+  background-image: url("../img/bg-header@1x.png");
   background-size: cover;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .page-header {
+    background-image: url("../img/bg-header@2x.png");
+  }
 }
 
 .page-header__wrapper {
@@ -20,12 +26,12 @@
   margin-left: 23px;
 }
 
-.page-header__contact:hover,
+.page-header__contact-item:hover,
 .page-header__logo-link:hover {
   opacity: 0.8;
 }
 
-.page-header__contact:active,
+.page-header__contact-item:active,
 .page-header__logo-link:active {
   opacity: 0.6;
 }
@@ -35,13 +41,14 @@
   justify-content: flex-end;
   align-items: flex-start;
   flex-grow: 1;
+  flex-wrap: wrap;
   box-sizing: border-box;
   padding-top: 38px;
   padding-right: 11px;
   padding-bottom: 10px;
 }
 
-.page-header__contact,
+.page-header__contact-item,
 .page-header__logo-link {
   text-decoration: none;
   cursor: pointer;
@@ -110,5 +117,22 @@
 @media (max-width: $tablet-width) {
   .logo__img {
     width: 38px;
+  }
+
+  .page-header__contact-wrapper {
+    padding-top: 14px;
+  }
+
+  .page-header__contact-item--phone {
+    padding-left: 39px;
+  }
+
+  .page-header__contact-item--email {
+    padding-left: 41px;
+  }
+
+  .page-header__logo-link {
+    margin-top: 17px;
+    margin-left: 17px;
   }
 }
