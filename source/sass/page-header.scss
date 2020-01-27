@@ -1,15 +1,15 @@
 .page-header {
   width: 100%;
   background-color: $color-dark;
-  background-image: url("../img/bg-header@1x.png");
-  background-size: cover;
+  // background-image: url("../img/bg-header@1x.png");
+  // background-size: cover;
 }
 
-@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  .page-header {
-    background-image: url("../img/bg-header@2x.png");
-  }
-}
+// @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+//   .page-header {
+//     background-image: url("../img/bg-header@2x.png");
+//   }
+// }
 
 .page-header__wrapper {
   display: flex;
