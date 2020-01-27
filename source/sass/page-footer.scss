@@ -1,0 +1,47 @@
+.page-footer__big-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 76%;
+  margin: 0 auto;
+}
+
+.page-footer__small-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.page-footer__logo-wrapper {
+  width: 18%;
+}
+
+.page-footer__central-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 82%;
+}
+
+.page-footer__sections {
+  width: 66%;
+}
+
+.page-footer__contacts {
+  width: 34%;
+}
+
+.age-footer__add-info {
+  min-height: 30px;
+}
+
+@media (max-width: $desktop-width) {
+  .page-footer__small-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .page-footer__central-wrapper {
+    flex-direction: column;
+  }
+}
