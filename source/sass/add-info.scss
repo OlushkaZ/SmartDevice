@@ -1,0 +1,15 @@
+.add-info {
+  display: flex;
+}
+
+@media (max-width: $desktop-width) {
+  .add-info {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .add-info {
+    flex-direction: column;
+  }
+}

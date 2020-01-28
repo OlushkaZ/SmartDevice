@@ -1,7 +1,29 @@
 .sections__title {
-  min-height: 20px;
+  margin: 0;
+  padding-left: 24%;
+  padding-bottom: 25px;
 }
 
 .sections__list {
-  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+  max-height: 100px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sections__item {
+  padding-right: 5.5%;
+  padding-left: 3%;
+}
+
+@media (max-width: $desktop-width) {
+  .sections__list {
+    flex-wrap: nowrap;
+    max-height: none;
+  }
 }

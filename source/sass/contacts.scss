@@ -1,7 +1,15 @@
 .contacts__title {
-  min-height: 20px;
+  margin: 0;
+  padding-left: 10px;
+  padding-bottom: 25px;
 }
 
 .contacts__list {
-  min-height: 100px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts__item {
+  margin-left: 6px;
 }

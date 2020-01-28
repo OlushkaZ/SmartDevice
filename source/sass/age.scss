@@ -1,0 +1,11 @@
+.age--top {
+  display: none;
+}
+
+@media (max-width: $desktop-width) {
+  .age--top {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+}
