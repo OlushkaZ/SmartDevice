@@ -13,3 +13,31 @@
 .contacts__item {
   margin-left: 6px;
 }
+
+@media (max-width: $desktop-width) {
+  .contacts__item {
+    margin-left: 4%;
+  }
+
+  .contacts__title {
+    padding-left: 17px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .contacts__title {
+    padding-left: 4.7%;
+    padding-top: 29px;
+    padding-bottom: 25px;
+  }
+
+  .contacts__list {
+    margin-top: 8px;
+    padding-right: 33px;
+    margin-bottom: 26px;
+  }
+
+  .contacts__item {
+    margin-left: 4.7%;
+  }
+}

@@ -26,12 +26,14 @@
 }
 
 .page-header__contact-item:hover,
-.page-header__logo-link:hover {
+.page-header__logo-link:hover,
+.page-footer__logo-link:hover {
   opacity: 0.8;
 }
 
 .page-header__contact-item:active,
-.page-header__logo-link:active {
+.page-header__logo-link:active,
+.page-footer__logo-link:active {
   opacity: 0.6;
 }
 
@@ -80,6 +82,12 @@
   background-size: 18px;
 }
 
+@media (max-width: 1200px) {
+  .page-header__wrapper {
+    width: 90%;
+  }
+}
+
 @media (max-width: $desktop-width) {
   .page-header__contact {
     display: none;
@@ -114,10 +122,6 @@
 }
 
 @media (max-width: $tablet-width) {
-  .logo__img {
-    width: 38px;
-  }
-
   .page-header__contact-wrapper {
     padding-top: 14px;
   }

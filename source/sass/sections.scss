@@ -26,4 +26,30 @@
     flex-wrap: nowrap;
     max-height: none;
   }
+
+  .sections__title {
+    padding-left: 4px;
+  }
+
+  .sections__item {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .sections__title {
+    padding-left: 4.7%;
+    padding-top: 29px;
+    padding-bottom: 25px;
+  }
+
+  .sections__list {
+    margin-top: 8px;
+    padding-right: 33px;
+    margin-bottom: 26px;
+  }
+
+  .sections__item {
+    margin-left: 4.7%;
+  }
 }
