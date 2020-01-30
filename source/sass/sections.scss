@@ -4,14 +4,18 @@
   padding-bottom: 25px;
 }
 
+.sections__list-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .sections__list {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: flex-start;
-  align-content: center;
-  max-height: 100px;
   margin: 0;
+  margin-left: 2%;
+  margin-right: 4.5%;
   padding: 0;
   list-style: none;
 }
@@ -22,9 +26,16 @@
 }
 
 @media (max-width: $desktop-width) {
+  .sections__list-wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
   .sections__list {
     flex-wrap: nowrap;
     max-height: none;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .sections__title {

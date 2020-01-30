@@ -62,6 +62,7 @@
 @media (max-width: $tablet-width) {
   .add-info__wrapper--right {
     flex-direction: column;
+    justify-content: stretch;
     align-items: center;
   }
 
