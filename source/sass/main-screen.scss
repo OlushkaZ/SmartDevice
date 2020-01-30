@@ -1,0 +1,39 @@
+.main-screen {
+  min-height: 863px;
+  margin-top: -80px;
+  background-color: $color-dark;
+  // background-image: url("../img/bg-main-triangle.png");
+
+  background-image: url("../img/bg-plata@1x.png"),
+    url("../img/bg-main-triangle.png"),
+    url("../img/bg-header@1x.png");
+  background-size: 37% auto, contain, cover;
+  background-position: 87% 70%, 27px -5px, center center;
+  background-repeat: no-repeat;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .main-screen {
+    // background-image: url("../img/bg-header@2x.png");
+
+    background-image: url("../img/bg-plata@2x.png"),
+      url("../img/bg-main-triangle.png"),
+      url("../img/bg-header@2x.png");
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .main-screen {
+    min-height: 686px;
+    background-size: 61% auto, auto auto, cover;
+    background-position: 173% 32%, -605px -191px, center center;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .main-screen {
+    min-height: 648px;
+    background-size: 95% auto, auto auto, cover;
+    background-position: 163% 21%, -894px -202px, center center;
+  }
+}
