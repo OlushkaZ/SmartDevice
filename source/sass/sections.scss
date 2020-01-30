@@ -38,6 +38,8 @@
 
 @media (max-width: $tablet-width) {
   .sections__title {
+    display: inline-block;
+    width: 80%;
     padding-left: 4.7%;
     padding-top: 29px;
     padding-bottom: 25px;
