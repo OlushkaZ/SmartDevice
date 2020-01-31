@@ -28,3 +28,37 @@
 .button:active {
   background-color: rgba(255, 255, 255, 0.3);
 }
+
+.button--main-screen {
+  margin-left: 99px;
+  padding: 17px 5.5%;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: $color-light;
+  border: none;
+}
+
+.button--main-screen:focus,
+.button--main-screen:hover {
+  background-color: $color-light;
+  opacity: 0.8;
+}
+
+.button--main-screen:active {
+  background-color: $color-light;
+  opacity: 0.5;
+}
+
+@media (max-width: $desktop-width) {
+  .button--main-screen {
+    margin-left: 51px;
+    padding: 17px 7%;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .button--main-screen {
+    margin-left: 0;
+    padding: 17px 11%;
+  }
+}

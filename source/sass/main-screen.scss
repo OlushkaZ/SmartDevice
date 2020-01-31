@@ -1,6 +1,6 @@
 .main-screen {
-  min-height: 863px;
   margin-top: -80px;
+  padding-top: 80px;
   background-color: $color-dark;
   // background-image: url("../img/bg-main-triangle.png");
 
@@ -22,18 +22,138 @@
   }
 }
 
+.main-screen__wrapper {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 76%;
+  min-height: 784px;
+  margin: 0 auto;
+  padding-left: 21px;
+  padding-top: 87px;
+}
+
+.main-screen__info-wrapper {
+  width: 53%;
+  margin: auto 0;
+}
+
+.main-screen__titile {
+  margin: 0;
+  margin-bottom: 27px;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-size: 80px;
+  line-height: 94px;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.main-screen__text {
+  position: relative;
+  margin-bottom: 46px;
+  padding-left: 99px;
+  font-size: 22px;
+  line-height: 34px;
+  color: #ffffff;
+}
+
+.main-screen__text::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 16px;
+  width: 66px;
+  height: 2px;
+  background-color: white;
+}
+
+.main-screen__link {
+  align-self: flex-start;
+  margin-left: -35px;
+  margin-bottom: 129px;
+  transform: rotate(-90deg);
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.main-screen__link:hover {
+  opacity: 0.8;
+}
+
+.main-screen__link:active {
+  opacity: 0.5;
+}
+
 @media (max-width: $desktop-width) {
   .main-screen {
-    min-height: 686px;
     background-size: 61% auto, auto auto, cover;
     background-position: 173% 32%, -605px -191px, center center;
+  }
+
+  .main-screen__wrapper {
+    min-height: 605px;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 59px;
+  }
+
+  .main-screen__info-wrapper {
+    width: 77%;
+  }
+
+  .main-screen__titile {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .main-screen__text {
+    margin-bottom: 60px;
+    padding-left: 49px;
+    font-size: 18px;
+    line-height: 156.8%;
+  }
+
+  .main-screen__text::before {
+    content: "";
+    left: 1px;
+    width: 33px;
+  }
+
+  .main-screen__link {
+    display: none;
   }
 }
 
 @media (max-width: $tablet-width) {
   .main-screen {
-    min-height: 648px;
     background-size: 95% auto, auto auto, cover;
     background-position: 163% 21%, -894px -202px, center center;
+  }
+
+  .main-screen__wrapper {
+    justify-content: flex-end;
+    width: 90%;
+    min-height: 582px;
+    padding-bottom: 71px;
+  }
+
+  .main-screen__info-wrapper {
+    width: 100%;
+    margin: 0;
+  }
+
+  .main-screen__titile {
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .main-screen__text {
+    margin-bottom: 44px;
+    font-size: 16px;
   }
 }
