@@ -1,0 +1,92 @@
+.advantage__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 65%;
+  margin: 0 auto;
+  padding-top: 111px;
+}
+
+.advantage__item {
+  box-sizing: border-box;
+  width: 46%;
+  min-height: 298px;
+  margin-left: 3.4%;
+  margin-bottom: 29px;
+  padding-left: 3.5%;
+  padding-top: 34px;
+  padding-right: 2.9%;
+  padding-bottom: 50px;
+  border: 1px solid #ebebeb;
+  border-left: 2px solid $color-light;
+  background-color: #ffffff;
+}
+
+.advantage__item:nth-child(odd) {
+  margin-left: 2.5%;
+}
+
+.advantage__item:hover {
+  background-color: $color-light;
+}
+
+.advantage__title {
+  margin: 0;
+  padding-top: 61px;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 400;
+  color: $color-light;
+}
+
+.advantage__item:hover .advantage__title,
+.advantage__item:hover .advantage__text {
+  color: #ffffff;
+}
+
+.background-wrapper {
+  background-color: #ffffff;
+  background-image: url("../img/bk-group.png");
+  background-position-y: -30px;
+}
+
+.advantage__img--conf {
+  background-image: url("../img/icon-adv-conf-blue.png");
+  background-repeat: no-repeat;
+  background-position: 0 8px;
+}
+
+.advantage__item:hover .advantage__img--conf {
+  background-image: url("../img/icon-adv-conf-white.png");
+}
+
+.advantage__img--term {
+  background-image: url("../img/icon-adv-term-blue.png");
+  background-repeat: no-repeat;
+  background-position: 0 8px;
+}
+
+.advantage__item:hover .advantage__img--term {
+  background-image: url("../img/icon-adv-term-white.png");
+}
+
+.advantage__img--pers {
+  background-image: url("../img/icon-adv-pers-blue.png");
+  background-repeat: no-repeat;
+  background-position: 0 8px;
+}
+
+.advantage__item:hover .advantage__img--pers {
+  background-image: url("../img/icon-adv-pers-white.png");
+}
+
+.advantage__img--prov {
+  background-image: url("../img/icon-adv-prov-blue.png");
+  background-repeat: no-repeat;
+  background-position: 0 8px;
+}
+
+.advantage__item:hover .advantage__img--prov {
+  background-image: url("../img/icon-adv-prov-white.png");
+}
