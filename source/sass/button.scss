@@ -4,6 +4,7 @@
   min-width: 100px;
   margin: 0;
   padding: 13px 26px;
+  appearance: none;
 
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-size: 14px;
@@ -47,6 +48,22 @@
 .button--main-screen:active {
   background-color: $color-light;
   opacity: 0.5;
+}
+
+.button--about {
+  padding: 13px 49px;
+  margin-top: 19px;
+  color: $color-light;
+  border-color: $color-light;
+}
+
+.button--about:hover,
+.button--about:focus {
+  opacity: 0.5;
+}
+
+.button--about:active {
+  opacity: 0.2;
 }
 
 @media (max-width: $desktop-width) {
