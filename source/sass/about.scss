@@ -70,6 +70,10 @@
 }
 
 @media (max-width: $tablet-width) {
+  .about {
+    margin-bottom: 55px;
+  }
+
   .about__title {
     font-size: 28px;
     margin-bottom: 17px;

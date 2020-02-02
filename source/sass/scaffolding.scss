@@ -48,7 +48,9 @@ input[type="checkbox"].visually-hidden,
 // * {
 //   outline: 1px solid green;
 // }
-
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   min-width: 320px;
