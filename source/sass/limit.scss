@@ -1,10 +1,15 @@
-.mobile-only {
+.mobile-only,
+.no-desktop {
   display: none;
 }
 
 @media (max-width: $desktop-width) {
   .desktop-only {
     display: none;
+  }
+
+  .no-desktop {
+    display: inline-block;
   }
 }
 

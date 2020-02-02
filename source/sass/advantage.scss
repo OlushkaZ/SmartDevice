@@ -87,6 +87,10 @@
 }
 
 @media (max-width: $desktop-width) {
+  .advantage {
+    margin-bottom: 20px;
+  }
+
   .advantage__wrapper {
     justify-content: flex-end;
     width: 98%;
@@ -132,6 +136,10 @@
 }
 
 @media (max-width: $tablet-width) {
+  .advantage {
+    margin-bottom: 35px;
+  }
+
   .advantage__wrapper {
     justify-content: flex-end;
     width: 91%;

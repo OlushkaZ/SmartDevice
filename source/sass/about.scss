@@ -6,6 +6,7 @@
 }
 
 .about__img {
+  flex-shrink: 0;
   margin: 0;
   padding: 0;
   margin-top: 2px;
@@ -25,10 +26,60 @@
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-size: 36px;
   line-height: 43px;
+  font-weight: 400px;
   color: #666666;
 }
 
 .about__text {
   margin: 0;
   margin-bottom: 21px;
+}
+
+.about__point::before {
+  content: "..";
+}
+
+@media (max-width: $desktop-width) {
+  .about__img {
+    width: 168px;
+    height: auto;
+    margin-left: -18px;
+  }
+
+  .about__wrapper {
+    width: 98%;
+  }
+
+  .about__title {
+    font-size: 32px;
+    line-height: 140.62%;
+  }
+
+  .about__info {
+    padding-top: 4px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    padding-left: 53px;
+  }
+
+  .about__text {
+    padding-top: 3px;
+    padding-left: 1px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .about__title {
+    font-size: 28px;
+    margin-bottom: 17px;
+  }
+
+  .about__info {
+    padding-left: 12px;
+  }
+
+  .about__text {
+    margin-bottom: 37px;
+  }
 }

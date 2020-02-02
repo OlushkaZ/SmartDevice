@@ -71,11 +71,20 @@
     margin-left: 49px;
     padding: 17px 7%;
   }
+
+  .button--about {
+    margin-top: 27px;
+    margin-left: 3px;
+  }
 }
 
 @media (max-width: $tablet-width) {
   .button--main-screen {
     margin-left: 0;
     padding: 17px 11%;
+  }
+
+  .button--about {
+    margin-top: -8px;
   }
 }
