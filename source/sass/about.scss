@@ -1,3 +1,7 @@
+.about {
+  margin-bottom: 100px;
+}
+
 .about__wrapper {
   display: flex;
   align-items: flex-start;
@@ -40,6 +44,10 @@
 }
 
 @media (max-width: $desktop-width) {
+  .about {
+    margin-bottom: 71px;
+  }
+
   .about__img {
     width: 168px;
     height: auto;
@@ -57,7 +65,7 @@
 
   .about__info {
     padding-top: 4px;
-    padding-right: 5px;
+    padding-right: 14px;
     padding-bottom: 10px;
     padding-left: 53px;
   }
@@ -71,7 +79,7 @@
 
 @media (max-width: $tablet-width) {
   .about {
-    margin-bottom: 55px;
+    margin-bottom: 58px;
   }
 
   .about__title {
@@ -80,7 +88,7 @@
   }
 
   .about__info {
-    padding-left: 12px;
+    padding-left: 10px;
   }
 
   .about__text {
