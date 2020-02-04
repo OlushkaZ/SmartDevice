@@ -32,7 +32,7 @@
           <a href="tel:+74950005252" class="page-header__contact-item page-header__contact-item--phone">
             <span class="page-header__contact">+7 (495) 000 52 52</span>
           </a>
-          <buttton class="button desktop-only" type="button">заказать звонок</button>
+          <buttton class="button desktop-only button-callback" type="button">заказать звонок</button>
         </div>
       </div>
     </div>
@@ -218,6 +218,33 @@
       </div>
     </div>
   </footer>
+  <section class="modal-feedback">
+  <div class="modal-feedback__wrap">
+    <h2 class="modal-feedback__caption">Закажите звонок</h2>
+    <p class="modal-feedback__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+    <button class="modal-close" type="button">
+      Закрыть
+    </button>
+    <form class="modal-feedback__form" action="index.html" method="post">
+      <p class="modal-feedback__form-wrap">
+        <label class="visually-hidden" for="feedback-name">Имя</label>
+        <input class="modal-feedback__form-input" id="feedback-name" type="text" value="" placeholder="Имя">
+      </p>
+      <p class="modal-feedback__form-wrap">
+        <label class="visually-hidden" for="feedback-email">Телефон</label>
+        <input class="modal-feedback__form-input" id="feedback-email" type="text" value="" placeholder="Телефон">
+      </p>
+      <p class="modal-feedback__form-wrap">
+        <label class="visually-hidden" for="feedback-text">Ваш вопрос</label>
+        <textarea class="modal-feedback__form-textarea" id="feedback-text" rows="5" placeholder="Ваш вопрос"></textarea>
+      </p>
+      <button class="button modal-feedback__button" type="submit">
+        Отправить
+      </button>
+    </form>
+  </div>
+</section>
+<script src="js/script.js"></script>
 </body>
 
 </html>

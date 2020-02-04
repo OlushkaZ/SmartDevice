@@ -1,0 +1,132 @@
+
+.modal-feedback {
+  display: none;
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 24px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.modal-feedback__wrap {
+  background-color: $color-light;
+  box-sizing: border-box;
+  width: 490px;
+  padding: 33px 39px 36px 39px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-feedback__caption {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 140.62%;
+  color: #ffffff;
+}
+
+.modal-feedback__form-input {
+  width: 411px;
+  height: 52px;
+  margin-bottom: 30px;
+}
+
+.modal-feedback__button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.modal-feedback__form-textarea {
+  width: 411px;
+  resize: none;
+}
+
+.modal-feedback__form-wrap {
+  margin: 0;
+  padding: 0;
+}
+
+.modal-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 18px;
+  height: 17px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -1px;
+  width: 22px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-feedback__form-input,
+.modal-feedback__form-textarea {
+  box-sizing: border-box;
+  padding-left: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  background-color: #50c5f8;
+  border: none;
+}
+
+.modal-feedback__form-input:hover,
+.modal-feedback__form-textarea:hover {
+  box-shadow: 0 0 0 2px rgba(154, 154, 154, 0.52);
+}
+
+.modal-feedback__form-input:focus,
+.modal-feedback__form-textarea:focus {
+  box-shadow: 0 0 0 2px rgba(46, 136, 228, 0.52);
+}
+
+.modal-feedback__form-input:active,
+.modal-feedback__form-textarea:active {
+  box-shadow: 0 0 0 2px rgba(46, 136, 228, 0.52);
+}
+
+.modal-feedback__form-input::-webkit-input-placeholder,
+.modal-feedback__form-textarea::-webkit-input-placeholder {
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.modal-feedback__form-input::-moz-placeholder,
+.modal-feedback__form-textarea::-moz-placeholder {
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.modal-feedback__form-input:-ms-input-placeholder,
+.modal-feedback__form-textarea:-ms-input-placeholder {
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.modal-show {
+  display: block;
+}
